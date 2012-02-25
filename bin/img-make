@@ -1,0 +1,3 @@
+#!/usr/bin/env sh
+
+exec convert -resize 32x32 -background none -negate vendor/justvector/svg/"$1".svg img/"$2".png
