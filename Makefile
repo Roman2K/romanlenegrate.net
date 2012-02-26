@@ -3,10 +3,10 @@ lint: lint-html lint-css
 build: html css img
 
 html:
-	jade < src/html/index.jade > build/index.html
+	jade < src/html/index.jade > index.html
 
 css:
-	lessc src/css/index.less > build/index.css
+	lessc src/css/index.less > index.css
 
 img: .PHONY
 	bin/img-make rss blog
