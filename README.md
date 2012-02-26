@@ -1,3 +1,13 @@
+# Personal website
+
+## Setup
+
+    $ git submodule update --init --recursive
+
+## Development
+
+    $ make
+
 ## Dependencies
 
     $ node install jade less
