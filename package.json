@@ -1,0 +1,8 @@
+{
+  "name": "home"
+, "version": "0.0.0"
+, "dependencies": {
+    "jade": "0.20.3"
+  , "less": "1.2.2"
+  }
+}

@@ -3,14 +3,15 @@
 ## Setup
 
     $ git submodule update --init --recursive
+    $ npm install
+
+  * [ImageMagick](http://www.imagemagick.org)
 
 ## Development
 
     $ make
 
-## Dependencies
-
-    $ node install jade less
+## vendor/
 
   * [JustVector Social Icons](http://www.alexpeattie.com/projects/justvector_icons/)
   * [Bootstrap](http://twitter.github.com/bootstrap)
