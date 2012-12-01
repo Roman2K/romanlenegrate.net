@@ -1,8 +1,5 @@
 @import "reset";
 
-@icon-height: 32px;
-@icon-width: 32px;
-
 .text() {
   color: rgba(255,255,255,.9);
 }
@@ -61,7 +58,7 @@ nav {
     li {
       display: block;
       list-style: none;
-      height: @icon-height;
+      height: 32px;
       .muted;
       .transition(all ease .3s);
 
@@ -72,9 +69,6 @@ nav {
       a, span {
         background: left 0 no-repeat;
         display: inline-block;
-        height: @icon-height;
-        line-height: @icon-height;
-        padding-left: @icon-width + 8px;
       }
     }
   }
