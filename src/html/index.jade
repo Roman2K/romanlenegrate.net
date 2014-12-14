@@ -14,16 +14,17 @@ html
         h2 Roman2K
       nav
         ul
-          li: a(href="https://twitter.com/Roman2K") Twitter
           li: a(href="https://github.com/Roman2K") GitHub
-          li: a(href="https://www.facebook.com/roman.lenegrate") Facebook
-          li: a(href="http://fr.linkedin.com/in/romanlenegrate") LinkedIn
           li: a(href="https://soundcloud.com/Roman2K") SoundCloud
           li: a(href="https://www.youtube.com/user/Roman2K") YouTube
-          li: a(href="http://trakt.tv/user/Roman2K") trakt
+          li: a(href="https://trakt.tv/user/Roman2K") trakt
           li: a(href="http://www.last.fm/user/Roman2K__") Last.fm
+          li: a(href="https://fr.linkedin.com/in/romanlenegrate") LinkedIn
           li: a(href="https://www.google.com/+RomanLeNégrate") Google+
-          li &#114;&#111;&#109;&#097;&#110;&#046;&#108;&#101;&#110;&#101;&#103;&#114;&#097;&#116;&#101;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;
+          li: a(href="https://www.facebook.com/roman.lenegrate") Facebook
+          li: a(href="https://onename.io/roman2k") Onename
+          li: a(href="https://twitter.com/Roman2K") Twitter
+          li!= "roman.lenegrate@gmail.com".split('').map(function(c) { return '&#' + c.charCodeAt(0) + ';' }).join('')
           li BTC: 1NmwhP5XHm1ZkbMFkUZz48yTwf1UWTSxKa
           li LTC: LiLwsRvNEks72b1gxdasXxKKoay7Vo2Acv
           li NMC: N5C26eTzycz7pA8Uv1KAGZyFibqviR8vwo
@@ -33,6 +34,5 @@ html
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
       })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
       ga('create', 'UA-42211575-1', 'romanlenegrate.net');
       ga('send', 'pageview');
