@@ -1,18 +1,22 @@
 !!! 5
 
+firstname = "Roman"
+lastname = "Le Négrate"
+nickname = "Roman2K"
+px = 127
+
 html
   head
     meta(http-equiv="Content-Type", content="text/html; charset=utf8")
-    title Roman Le Négrate
+    title= [firstname, lastname].join(" ")
     link(rel="stylesheet", type="text/css", href="index.css")
   body
     section
       header
-        - var px = 127
         img(src="http://www.gravatar.com/avatar/4eb0a12aa5eaf310102607fdf2274726?s=" + (px * 2), width=px, height=px, style="width: " + px + "px; height: " + px + "px")
         h1
-          a(href="/")!= "Roman<br/>Le Négrate"
-        h2 Roman2K
+          a(href="/")!= [firstname, lastname].join('<br/>')
+        h2= nickname
       nav
         ul
           li: a(href="https://github.com/Roman2K") GitHub
