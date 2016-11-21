@@ -13,7 +13,7 @@ html
   body
     section
       header
-        img(src="http://graph.facebook.com/1374173549/picture?type=square&height=" + (px * 2) + "&width=" + (px * 2), width=px, height=px, style="width: " + px + "px; height: " + px + "px")
+        img(src="https://avatars.githubusercontent.com/u/2480?s=" + (px * 2), width=px, height=px, style="width: " + px + "px; height: " + px + "px")
         h1
           a(href="/")!= [firstname, lastname].join('<br/>')
         h2= nickname
@@ -22,7 +22,6 @@ html
           li: a(href="https://www.linkedin.com/in/romanlenegrate") LinkedIn
           li: a(href="https://github.com/Roman2K") GitHub
           li: a(href="https://soundcloud.com/Roman2K") SoundCloud
-          li: a(href="https://www.facebook.com/roman.lenegrate") Facebook
           li!= "roman.lenegrate@gmail.com".split('').map(function(c) { return '&#' + c.charCodeAt(0) + ';' }).join('')
     script
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
