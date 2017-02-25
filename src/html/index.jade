@@ -3,6 +3,7 @@
 firstname = "Roman"
 lastname = "Le Négrate"
 nickname = "Roman2K"
+avatar = "https://github.com/identicons/Roman2K.png"
 px = 127
 
 html
@@ -13,9 +14,13 @@ html
   body
     section
       header
-        img(src="https://github.com/identicons/Roman2K.png", width=px, height=px, style="width: " + px + "px; height: " + px + "px")
+        a(href="/")
+          img(src=avatar, width=px, height=px, style="width: " + px + "px; height: " + px + "px")
         h1
-          a(href="/")!= [firstname, lastname].join('<br/>')
+          a(href="/")
+            = firstname
+            br
+            = lastname
         h2= nickname
       nav
         ul
