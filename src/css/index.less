@@ -1,13 +1,13 @@
 @import "reset";
 
-.text() {
-  color: rgba(255,255,255,.9);
+.text {
+  color: rgba(255,255,255,.9)
 }
 .muted() {
-  opacity: .3;
+  opacity: .3
 }
 .unmuted() {
-  opacity: 1;
+  opacity: 1
 }
 .transition() {
   transition: @arguments;
@@ -61,20 +61,23 @@ nav {
     margin: 0;
 
     li {
-      display: block;
       list-style: none;
-      height: 32px;
-      .muted;
-      .transition(all ease .3s);
 
-      &:hover {
-        .unmuted;
-      }
-
-      a, span {
+      > a, span {
+        height: 32px;
         background: left 0 no-repeat;
-        display: inline-block;
+        display: block;
+
+        .muted;
+        .transition(all ease .3s);
+        &:hover {
+          .unmuted;
+        }
       }
+    }
+
+    ul {
+      padding-left: 20px;
     }
   }
 }

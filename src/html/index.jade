@@ -26,14 +26,18 @@ html
         ul
           li: a(href="https://www.linkedin.com/in/romanlenegrate") LinkedIn
           li: a(href="https://github.com/Roman2K") GitHub
-          li: a(href="https://www.youtube.com/user/Roman2K") YouTube
+          li
+            a(href="https://www.youtube.com/user/Roman2K") YouTube
+            ul
+              li: a(href="https://www.youtube.com/channel/UCon42_JQsPSdknbrmCjTOnw") Iron Max España
           li: a(href="https://www.mixcloud.com/Roman2K") Mixcloud
           li: a(href="https://soundcloud.com/Roman2K") SoundCloud
           li: a(href="https://twitter.com/roman2k_") Twitter
           li: a(href="https://disqus.com/by/Roman2K") Disqus
           li: a(href="https://www.reddit.com/user/Roman2K") reddit
           li: a(href="https://keybase.io/roman2k") Keybase
-          li!= "roman.lenegrate@gmail.com".split('').map(function(c) { return '&#' + c.charCodeAt(0) + ';' }).join('')
+          li
+            span!= "roman.lenegrate@gmail.com".split('').map(function(c) { return '&#' + c.charCodeAt(0) + ';' }).join('')
     script
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
