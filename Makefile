@@ -3,4 +3,4 @@ all:
 		&& mv build/* . \
 		&& git rm -r build \
 		&& git add index.* \
-		&& git commit -e -v -m "built from master"
+		&& git commit -e -v -m "Built from master"
