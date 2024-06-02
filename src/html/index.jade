@@ -3,6 +3,8 @@
 firstname    = "Roman"
 lastname     = "Le Négrate"
 nickname     = "Roman2K"
+title        = `${firstname} ${lastname} (${nickname})`
+description  = "Personal website of ${firstname} ${lastname}"
 px           = 127
 avatar       = "https://avatars.githubusercontent.com/u/2480?v=4"
 nostr_pubkey = "npub1e7thdfacjevjpuas4r5m0hz9xy5a5efcunyn68les9aw3f6gll3sk72dxk"
@@ -10,9 +12,14 @@ nostr_pubkey = "npub1e7thdfacjevjpuas4r5m0hz9xy5a5efcunyn68les9aw3f6gll3sk72dxk"
 html
   head
     meta(http-equiv="Content-Type", content="text/html; charset=utf8")
-    title= [firstname, lastname].join(" ")
+    meta(property="og:site_name", content=title)
+    meta(property="og:title", content=description)
+    meta(name="description", content=description)
+    meta(name="og:description", content=description)
+    title= title
     link(rel="stylesheet", type="text/css", href="index.css")
     link(rel="canonical", href="https://romanlenegrate.net")
+    link(rel="shortcut icon", href=avatar)
   body
     section
       header
@@ -30,6 +37,10 @@ html
             a(href="https://www.linkedin.com/in/romanlenegrate/") LinkedIn
           li
             a(href="https://github.com/Roman2K/") GitHub
+          li
+            a(href="https://x.com/Roman2K__") X (Twitter)
+          li
+            a(href="https://twitter.com/TxDotTown") X (Twitter) for Tx.Town
           li
             span!= nostr_pubkey.split('').map(function(c) { return '&#' + c.charCodeAt(0) + ';' }).join('')
 
